@@ -1,6 +1,40 @@
+
+
 body {
     background-color: #454545;
 }
-header footer {
+
+header, footer {
     background-color: #C1B39A;
+}
+
+.text  {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+}
+
+@media screen and (max-width: 375px) {
+    h1 {
+        font-weight: bold;
+        font-size: 16px;
+    }
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 300%;
+}
+
+h2 {
+    color: #eaebeb;
+    font-weight: lighter;
+    font-size: 200%;
+}
+
+#copy {
+    font-weight: lighter;
+}
+
+#logo {
+    max-width: 10%;
 }
