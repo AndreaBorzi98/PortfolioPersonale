@@ -13,44 +13,13 @@ header, footer {
     font-style: normal;
 }
 
-/*iPhone 8*/
-@media screen and (max-width: 375px) {
-    h1 {
-        font-weight: bold;
-        font-size: 16px;
-    }
-    h2 {
-        font-weight: lighter;
-        font-size: 10px;
-    }
-    #hamburger-icon #img-hamburger {
-        width: 30px;
-        height: auto;
-        cursor: pointer;
-    }
-}
-
-/*Tablet*/
-@media screen and (max-width: 768px) {
-    h1 {
-        font-weight: bold;
-        font-size: 24px;
-    }
-    h2 {
-        font-weight: lighter;
-        font-size: 16px;
-    }
-}
-
 h1 {
     font-weight: bold;
-    font-size: 60px;
 }
 
 h2 {
     color: #eaebeb;
     font-weight: lighter;
-    font-size: 48px;
 }
 
 #copy {
@@ -63,6 +32,53 @@ h2 {
     margin-left: 2%;
 }
 
-.hamburger-menu {
+/*iPhone 8
+@media screen and (max-width: 375px) {
+    h1 {
+        font-size: 150%;
+        color: blue;
+    }
+
+    h2 {
+        font-size: 100%;
+    }
+
+    #hamburger-icon, #img-hamburger, #hamburger-content {
+        display:block;
+        width: 30px;
+        height: auto;
+        cursor: pointer;
+    }
+}
+
+tablet
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 300%;
+        color:red;
+    }
+    h2 {
+        font-size: 250%;
+    }
+
+    #hamburger-icon, #img-hamburger, #hamburger-content {
+        display: block;
+        width: 30%;
+        height: auto;
+        cursor: pointer;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    h1 {
+        font-size: 400%;
+    }
+
+    h2 {
+        font-size: 350%;
+    }
+
+    #hamburger-icon, #img-hamburger, #hamburger-content {
     display:none;
-  }
+    }
+}*/
