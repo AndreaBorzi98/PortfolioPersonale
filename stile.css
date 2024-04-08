@@ -23,6 +23,11 @@ header, footer {
         font-weight: lighter;
         font-size: 10px;
     }
+    #hamburger-icon #img-hamburger {
+        width: 30px;
+        height: auto;
+        cursor: pointer;
+    }
 }
 
 /*Tablet*/
@@ -54,4 +59,10 @@ h2 {
 
 #logo {
     max-width: 15%;
+    margin-top: 2%;
+    margin-left: 2%;
 }
+
+.hamburger-menu {
+    display:none;
+  }
