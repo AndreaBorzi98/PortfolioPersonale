@@ -269,16 +269,38 @@ footer p {
     margin: 20px 0;
 }
 
-.social-icons a {
-    color: #fff;
-    margin: 0 15px; /* Aumenta lo spazio tra le icone */
-    font-size: 2em; /* Aumenta la dimensione delle icone */
-    transition: color 0.1s;
-}
-
 .social-icons a:hover {
     color: #C1B39A; /* Colore al passaggio del mouse */
 }
 
+#contatti {
+    max-width: 100%;
+    height: auto;
+}
 
+@media screen and (max-width: 768px) {
+    .contact-info-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .contact-info-item {
+        justify-content: center;
+    }
+
+    .map-container iframe {
+        width: 100%;
+        height: 300px;
+    }
+
+    .social-icons {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .social-icons a {
+        margin: 10px;
+    }
+}
 }
