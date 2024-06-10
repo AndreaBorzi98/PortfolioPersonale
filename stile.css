@@ -260,7 +260,7 @@ footer p {
 }
 
 .contact-info-item p {
-    margin: 0;
+    margin-right: 10px;
 }
 
 .map-container {
@@ -269,16 +269,16 @@ footer p {
     margin: 20px 0;
 }
 
-.social-icons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
+.social-icons a {
+    color: #fff;
+    margin: 0 15px; /* Aumenta lo spazio tra le icone */
+    font-size: 2em; /* Aumenta la dimensione delle icone */
+    transition: color 0.1s;
 }
 
-.social-icons a {
-    color: #000;
-    margin-right: 10px;
-    font-size: 24px;
+.social-icons a:hover {
+    color: #C1B39A; /* Colore al passaggio del mouse */
 }
+
+
 }
