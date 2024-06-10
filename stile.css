@@ -252,7 +252,6 @@ footer p {
 .contact-info-item {
     display: flex;
     align-items: center;
-    color: #000;
 }
 
 .contact-info-item i {
