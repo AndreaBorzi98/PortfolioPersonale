@@ -1,84 +1,284 @@
-
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body {
+    font-family: 'Roboto', sans-serif;
     background-color: #454545;
+    color: #fff;
+    line-height: 1.6;
 }
 
-header, footer {
+header {
     background-color: #C1B39A;
+    text-align: center;
+    padding: 20px 0;
 }
 
-.text  {
-    font-family: "Roboto", sans-serif;
-    font-style: normal;
+.logo-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-h1 {
+.logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.logo-text h1 {
     font-weight: bold;
+    color: #454545;
+    margin: 0;
 }
 
-h2 {
-    color: #eaebeb;
-    font-weight: lighter;
+.logo-text p {
+    font-style: italic;
+    color: #fff;
+    margin-top: -5px;
 }
 
-#copy {
-    font-weight: lighter;
+.menu-row {
+    background-color: #415A75;
+    padding: 10px 0;
 }
 
-#logo {
-    max-width: 15%;
-    margin-top: 2%;
-    margin-left: 2%;
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-/*iPhone 8
-@media screen and (max-width: 375px) {
-    h1 {
-        font-size: 150%;
-        color: blue;
+.nav {
+    display: flex;
+    list-style: none;
+}
+
+.nav li {
+    margin: 0 20px;
+}
+
+.nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-toggle .bar {
+    height: 3px;
+    width: 25px;
+    background-color: #fff;
+    margin: 4px 0;
+    transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    .nav {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
     }
 
-    h2 {
-        font-size: 100%;
+    .nav li {
+        margin: 10px 0;
     }
 
-    #hamburger-icon, #img-hamburger, #hamburger-content {
-        display:block;
-        width: 30px;
-        height: auto;
-        cursor: pointer;
+    .menu-toggle {
+        display: flex;
+    }
+
+    .nav.active {
+        display: flex;
     }
 }
 
-tablet
-@media screen and (max-width: 768px) {
-    h1 {
-        font-size: 300%;
-        color:red;
-    }
-    h2 {
-        font-size: 250%;
-    }
+.carousel {
+    margin: 20px 0;
+    text-align: center;
+}
 
-    #hamburger-icon, #img-hamburger, #hamburger-content {
-        display: block;
-        width: 30%;
-        height: auto;
-        cursor: pointer;
+.carousel-container {
+    display: flex;
+    justify-content: center;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 20px;
+}
+
+.carousel-item {
+    min-width: 200px;
+    max-width: 400px;
+    margin: 0 10px;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    background-color: #C1B39A;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.contact-info {
+    margin-bottom: 10px;
+}
+
+.contact-info p {
+    margin: 5px 0;
+    color: #454545;
+}
+
+.contact-info i {
+    margin-right: 10px;
+    color: #454545;
+}
+
+footer p {
+    color: #454545;
+}
+
+.video-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px 0; /* Modifica il padding */
+    margin-bottom: 50px;
+}
+
+.video-item {
+    text-align: center;
+    color: #fff;
+}
+
+.video-item iframe {
+    width: 800;
+    height: 600;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.video-description {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #fff;
+}
+
+@media screen and (min-width: 1920px) {
+    .video-gallery {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
-@media screen and (min-width: 769px) {
-    h1 {
-        font-size: 400%;
+@media screen and (max-width: 600px) {
+    .video-gallery {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+}
+
+.center {
+    text-align: center;
+}
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center; /* Centra le immagini orizzontalmente */
+    align-items: center; /* Centra le immagini verticalmente */
+    margin: 0 auto; /* Centra la griglia */
+}
+
+.photo-item {
+    text-align: center;
+}
+
+.photo {
+    width: 100%; /* Occupa tutto lo spazio disponibile */
+    max-width: 400px; /* Dimensione massima */
+    height: auto; /* Permette al browser di mantenere l'aspect ratio */
+}
+
+.photo-description {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #fff;
+}
+
+@media screen and (max-width: 600px) {
+    .photo-grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
     }
 
-    h2 {
-        font-size: 350%;
-    }
+/*sezione contatti*/
+.contact-section {
+    background-color: #fff;
+    padding: 50px 0;
+    text-align: center; /* Centra il testo */
+}
 
-    #hamburger-icon, #img-hamburger, #hamburger-content {
-    display:none;
-    }
-}*/
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.contact-info-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: left; /* Allinea il testo a sinistra */
+}
+
+.contact-info-item {
+    display: flex;
+    align-items: center;
+    color: #000;
+}
+
+.contact-info-item i {
+    margin-right: 10px;
+}
+
+.contact-info-item p {
+    margin: 0;
+}
+
+.map-container {
+    width: 100%;
+    height: 400px;
+    margin: 20px 0;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    color: #000;
+    margin-right: 10px;
+    font-size: 24px;
+}
+}

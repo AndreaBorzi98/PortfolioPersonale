@@ -3,22 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Andrea Salvatore Borzì Portfolio</title>
-    <link rel="stylesheet" type="text/css" href="stile.css">
+    <title>Andrea Borzì - Personal Portfolio</title>
+    <link rel="stylesheet" href="stile.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <link rel="icon" href="img/favicon.ico" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/43846cee8f.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
-        <img id="logo" src="img/logo.png" alt="logo">
-        <h1 class="text">ANDREA SALVATORE BORZÌ</h1>
-        <h2 class="text">PERSONAL PORTFOLIO</h2>
+        <div class="logo-text">
+            <img src="img/logo.png" alt="Logo" class="logo">
+            <div class="text">
+                <h1>ANDREA BORZÌ</h1>
+                <p><i>PERSONAL PORTFOLIO</i></p>
+            </div>
+        </div>
     </header>
+    <div class="menu-row">
+        <nav>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav" id="nav">
+                <li><a href="index.html">CHI SONO</a></li>
+                <li><a href="video.html">VIDEO</a></li>
+                <li><a href="photo.html">PHOTO</a></li>
+                <li><a href="contatti.html">CONTATTI</a></li>
+            </ul>
+        </nav>
+    </div>
+    <main>
+        <section class="about-me" id="chi-sono">
+            <div class="container">
+                <h2 class="center">Chi Sono</h2>
+                <p class="center">Mi chiamo Andrea Salvatore Borzì, ho 26 anni e frequento il corso di Nuove Tecnologie dell'Arte. I miei lavori consistono sia in progetti audiovisivi che fotografici, punto a specializzarmi nel montaggio video e nei VFX.</p>
+            </div>
+        </section>
+        <section id="video-carousel" class="carousel">
+            <h2>Video</h2>
+            <div class="carousel-container">
+                <div class="carousel-item"><a href="video.html"><img src="img/vid1.png" alt="Placeholder"></a></div>
+                <div class="carousel-item"><a href="video.html"><img src="img/vid2.png" alt="Placeholder"></a></div>
+                <div class="carousel-item"><a href="video.html"><img src="img/vid3.png" alt="Placeholder"></a></div>
+            </div>
+        </section>
+        <section id="photo-carousel" class="carousel">
+            <h2>Photo</h2>
+            <div class="carousel-container">
+                <div class="carousel-item"><a href="photo.html"><img src="img/foto2.jpg" alt="Placeholder"></a></div>
+                <div class="carousel-item"><a href="photo.html"><img src="img/foto3.jpg" alt="Placeholder"></a></div>
+                <div class="carousel-item"><a href="photo.html"><img src="img/foto6.jpg" alt="Placeholder"></a></div>
+            </div>
+        </section>
+    </main>
     <footer>
-        <p class="text" id="copy">Copyright 2024 Andrea Salvatore Borzì</p>
+        <div class="contact-info">
+            <p><i class="fas fa-phone"></i> +39 3461407638</p>
+            <p><i class="fas fa-envelope"></i> borzi.andrea98@gmail.com</p>
+            <p><i class="fas fa-map-marker-alt"></i> Via Raimondo Franchetti, 5</p>
+        </div>
+        <p><i>Copyright 2024 Andrea Salvatore Borzì</i></p>
     </footer>
-    
+    <script src="scripts.js"></script>
 </body>
 </html>
