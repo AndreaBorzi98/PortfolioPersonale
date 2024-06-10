@@ -113,10 +113,10 @@ nav {
     overflow-x: auto;
     scroll-behavior: smooth;
     padding: 20px;
+    max-width: 100%;
 }
 
 .carousel-item {
-    min-width: 200px;
     max-width: 400px;
     margin: 0 10px;
     background-color: #333;
@@ -127,7 +127,7 @@ nav {
 }
 
 .carousel-item img {
-    width: 100%;
+    max-width: 100%;
     height: auto;
 }
 
