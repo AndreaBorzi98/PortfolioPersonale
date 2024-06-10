@@ -5,3 +5,4 @@ mobileMenu.addEventListener('click', () => {
     mobileMenu.classList.toggle('is-active');
     nav.classList.toggle('active');
 });
+
