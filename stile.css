@@ -1,3 +1,4 @@
+/*sistemare spazio tra header*/
 * {
     margin: 0;
     padding: 0;
@@ -11,13 +12,13 @@ a {
 .scritta-centrale {
     text-align: center;
     margin-top: 20px;
+    margin-bottom: 20px; 
 }
 
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #454545;
     color: #fff;
-    line-height: 1.6;
 }
 
 header {
@@ -50,13 +51,14 @@ header {
     margin-top: -5px;
 }
 
+/* linea blu menù*/
 .menu-row {
     background-color: #415A75;
-    padding: 10px 0;
+    padding: 15px 0;
 }
 
 
-
+/* menù generale*/
 nav {
     display: flex;
     justify-content: center;
@@ -78,6 +80,11 @@ nav {
     font-size: 18px;
 }
 
+.nav a:hover {
+    color:#C1B39A;
+}
+
+
 .menu-toggle {
     display: none;
     flex-direction: column;
@@ -89,7 +96,9 @@ nav {
     width: 25px;
     background-color: #fff;
     margin: 4px 0;
-    transition: all 0.3s ease;
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
 }
 
  /*Stili per l'animazione*/
@@ -105,7 +114,7 @@ nav {
     transform: rotate(45deg) translate(-5px, -6px);
 }
 
-
+/* menù hamburger mobile*/
 @media (max-width: 768px) {
     .nav {
         display: none;
@@ -128,47 +137,15 @@ nav {
     }
 }
 
-/*.carousel {
-    margin: 20px 0;
-    text-align: center;
-}
-
-.carousel-container {
-    display: flex;
-    justify-content: center;
-    overflow-x: auto;
-    scroll-behavior: smooth;
-    padding: 10px;
-    max-width: 100%;
-}
-
-.carousel-item {
-    min-width: 200px;
-    max-width: 400px;
-    margin: 0 10px;
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
-    border-radius: 1px;
-}
-
-.carousel-item img {
-    max-width: 100%;
-    height: auto;
-}*/
 
 #bio {
     margin-bottom:80px;
 }
 
+/* griglia pagina index*/
 .griglia {
-    text-align: center; /* Centra gli elementi orizzontalmente */
+    text-align: center; 
     margin-bottom: 40px; /* Spazio tra le sezioni */
-}
-
-.scritta-centrale {
-    margin-bottom: 20px; /* Spazio tra la scritta e la griglia */
 }
 
 .contenitore {
@@ -177,27 +154,26 @@ nav {
 }
 
 .index-item {
-    margin: 0 10px; /* Spazio tra gli elementi */
+    margin: 0 10px; 
 }
 
-/* Per schermi più piccoli, fai in modo che gli elementi si affianchino verticalmente */
 @media screen and (max-width: 768px) {
     .contenitore {
-        flex-direction: column; /* Imposta la direzione della flessione su verticale */
+        flex-direction: column; /* direzione elementi in verticale per mobile */
     }
 
     .index-item {
-        margin: 10px 0; /* Spazio tra gli elementi verticali */
+        margin: 10px 0;
     }
 }
-
 
 .index-item img {
     min-width: 150px;
     max-width: 400px;
-    max-height: 100%
+    max-height: 100%;
 }
 
+/* footer generale*/
 footer {
     background-color: #C1B39A;
     text-align: center;
@@ -222,13 +198,16 @@ footer p {
     color: #454545;
 }
 
+/* pagina video*/
 .video-gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 20px;
-    padding: 20px 0; /* Modifica il padding */
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 70px;
+    padding: 20px 0;
     margin-top: 20px;
     margin-bottom: 50px;
+    margin-right: 30px;
+    margin-left: 30px;
 }
 
 .video-item {
@@ -238,8 +217,8 @@ footer p {
 }
 
 .video-item iframe {
-    width: 800;
-    height: 600;
+    width: 560px;
+    height: 315px;
     max-width: 100%;
     max-height: 100%;
 }
@@ -250,18 +229,13 @@ footer p {
     color: #fff;
 }
 
-@media screen and (min-width: 1920px) {
+@media screen and (max-width: 768px) {
     .video-gallery {
-        grid-template-columns: repeat(2, 1fr);
+        display:flex;
+        flex-direction:column;
     }
 }
-
-@media screen and (max-width: 600px) {
-    .video-gallery {
-        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    }
-}
-
+/* classe elementi da mettere al centro testo*/
 .center {
     text-align: center;
 }
@@ -270,9 +244,9 @@ footer p {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    justify-items: center; /* Centra le immagini orizzontalmente */
-    align-items: center; /* Centra le immagini verticalmente */
-    margin: 0 auto; /* Centra la griglia */
+    justify-items: center; 
+    align-items: center; 
+    margin: 0 auto; 
 }
 
 .photo-item {
@@ -280,9 +254,9 @@ footer p {
 }
 
 .photo {
-    width: 100%; /* Occupa tutto lo spazio disponibile */
-    max-width: 400px; /* Dimensione massima */
-    height: auto; /* Permette al browser di mantenere l'aspect ratio */
+    width: 100%; 
+    max-width: 400px; 
+    height: auto; 
 }
 
 .photo-description {
@@ -300,22 +274,22 @@ footer p {
 .contact-section {
     background-color: #fff;
     padding: 50px 0;
-    text-align: center; /* Centra il testo */
+    text-align: center;
 }
-
+/*container sezione contatti*/
 .container {
-    max-width: 1200px;
+    max-width: 100%;
     margin: 0 auto;
     padding: 0 20px;
 }
 
 .contact-info-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /*fit automatico elementi e minimo massimo dimensione*/
     grid-gap: 20px;
     justify-content: center;
     align-items: center;
-    text-align: left; /* Allinea il testo a sinistra */
+    text-align: left; 
 }
 
 .contact-info-item {
@@ -332,13 +306,9 @@ footer p {
 }
 
 .map-container {
-    width: 100%;
+    width: auto;
     height: 400px;
-    margin: 20px 0;
-}
-
-.social-icons a:hover {
-    color: #C1B39A; /* Colore al passaggio del mouse */
+    margin: 20px;
 }
 
 #contatti {
@@ -357,8 +327,8 @@ footer p {
     }
 
     .map-container iframe {
-        width: 100%;
-        height: 300px;
+        max-width: 100%;
+        max-height: 100%;
     }
 
     .social-icons {
